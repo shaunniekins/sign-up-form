@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <script src="https://kit.fontawesome.com/cd6b3e1f8f.js" defer crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js" defer></script>
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div id="sidebar">
+        <div id="logo">
+            <img src="./assets/images/cat-logo.png" alt="Meow">
+            <h1>Meow</h1>
+        </div>
+        <div id="credit">Photo by 
+            <a href="https://unsplash.com/photos/f4rYLkBy0gU" target="_blank">Tolga Ulkan</a> on
+            <a href="https://unsplash.com/" target="_blank"> Unsplash</a>
+        </div>
+    </div>
+    <main>
+        <div>
+            <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h2>
+            <h2>Sign up <span class="italic">now</span> to get started.</h2>
+            <h2>You <span class="italic">know</span> you want to.</h2>            
+        </div>
+        <div>
+            <h2>Let's do this!</h2>
+            <form id="userDetails" action="#" method="get">
+                <div>
+                    <div>
+                        <label for="firstName">FIRST NAME</label>
+                        <div>
+                            <input  type="text" id="firstName" name="firstName" pattern="^[A-Za-z]*$" placeholder=" " required>
+                            <i class="fa fa-warning error" aria-hidden="false"></i>
+                            <i class="fa fa-check-circle approved" aria-hidden="false"></i>
+                            <i class=fa-></i>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="lastName">LAST NAME</label>
+                        <div>
+                            <input type="text" id="lastName" name="lastName" pattern="^[A-Za-z]*$" placeholder=" " required>  
+                            <i class="fa fa-warning error" aria-hidden="true"></i>
+                            <i class="fa fa-check-circle approved" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="userEmail">EMAIL</label>
+                        <div>
+                            <input type="email" id="userEmail" name="userEmail" placeholder="example@email.com" required>
+                            <i class="fa fa-warning error" aria-hidden="true"></i>
+                            <i class="fa fa-check-circle approved" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="phoneNumber">PHONE NUMBER</label>
+                        <div>
+                            <input type="text" id="phoneNumber" name="phoneNumber" pattern="^[0-9]*$" inputmode="numeric" placeholder=" " required>
+                            <i class="fa fa-warning error" aria-hidden="true"></i>
+                            <i class="fa fa-check-circle approved" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <div>
+                            <input type="password" id="password" name="password" placeholder=" " required minlength="8">
+                            <i class="fa fa-warning error" aria-hidden="true"></i>
+                            <i class="fa fa-check-circle approved" aria-hidden="true"></i>
+                        </div>
+                        <p class="passError">*Passwords do not match</p>
+                    </div>
+                    <div>
+                        <label for="confirmPass">CONFIRM PASSWORD</label>
+                        <div>
+                            <input type="password" id="confirmPass" name="confirmPass"  minlength="8" placeholder=" " required>
+                            <i class="fa fa-warning error" aria-hidden="true"></i>
+                            <i class="fa fa-check-circle approved" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <button type="submit" form="userDetails">Create Account</button>
+            <p>Already have an account? 
+                <a href="#">Log-in</a>
+            </p>
+        </div>        
+    </main>
+</body>
+</html>
