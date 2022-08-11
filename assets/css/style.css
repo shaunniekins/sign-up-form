@@ -12,7 +12,7 @@ body {
 }
 
 body > #sidebar {
-    background-image: url("/assets/images/cat-side-photo.jpg");
+    background-image: url("../images/cat-side-photo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
