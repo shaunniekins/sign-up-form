@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/cd6b3e1f8f.js" defer crossorigin="anonymous"></script>
     <script src="./assets/js/main.js" defer></script>
     <title>Sign-up Form</title>
@@ -13,11 +14,11 @@
 <body>
     <div id="sidebar">
         <div id="logo">
-            <img src="./assets/images/cat-logo.png" alt="Meow">
+            <img src="./assets/images/odin-lined.png" alt="Meow">
             <h1>Meow</h1>
         </div>
         <div id="credit">Photo by 
-            <a href="https://unsplash.com/photos/f4rYLkBy0gU" target="_blank">Tolga Ulkan</a> on
+            <a  href="https://unsplash.com/photos/f4rYLkBy0gU" target="_blank">Tolga Ulkan</a> on
             <a href="https://unsplash.com/" target="_blank"> Unsplash</a>
         </div>
     </div>
@@ -36,8 +37,6 @@
                         <div>
                             <input  type="text" id="firstName" name="firstName" pattern="^[A-Za-z]*$" placeholder=" " required>
                             <i class="fa fa-warning error" aria-hidden="false"></i>
-                            <i class="fa fa-check-circle approved" aria-hidden="false"></i>
-                            <i class=fa-></i>
                         </div>
                     </div>
                     <div>
@@ -45,7 +44,6 @@
                         <div>
                             <input type="text" id="lastName" name="lastName" pattern="^[A-Za-z]*$" placeholder=" " required>  
                             <i class="fa fa-warning error" aria-hidden="true"></i>
-                            <i class="fa fa-check-circle approved" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
@@ -55,7 +53,6 @@
                         <div>
                             <input type="email" id="userEmail" name="userEmail" placeholder="example@email.com" required>
                             <i class="fa fa-warning error" aria-hidden="true"></i>
-                            <i class="fa fa-check-circle approved" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div>
@@ -63,7 +60,6 @@
                         <div>
                             <input type="text" id="phoneNumber" name="phoneNumber" pattern="^[0-9]*$" inputmode="numeric" placeholder=" " required>
                             <i class="fa fa-warning error" aria-hidden="true"></i>
-                            <i class="fa fa-check-circle approved" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
@@ -73,16 +69,13 @@
                         <div>
                             <input type="password" id="password" name="password" placeholder=" " required minlength="8">
                             <i class="fa fa-warning error" aria-hidden="true"></i>
-                            <i class="fa fa-check-circle approved" aria-hidden="true"></i>
                         </div>
-                        <p class="passError">*Passwords do not match</p>
                     </div>
                     <div>
                         <label for="confirmPass">CONFIRM PASSWORD</label>
                         <div>
                             <input type="password" id="confirmPass" name="confirmPass"  minlength="8" placeholder=" " required>
                             <i class="fa fa-warning error" aria-hidden="true"></i>
-                            <i class="fa fa-check-circle approved" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
