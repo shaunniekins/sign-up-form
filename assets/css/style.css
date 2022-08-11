@@ -12,32 +12,42 @@ body {
 }
 
 body > #sidebar {
-    background-image: url("./assets/images/cat-side-photo.jpg");
+    background-image: url("/assets/images/cat-side-photo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sidebar > #logo > h1 {
+    font-family: "Aboreto", Impact, sans-serif, serif;
+    font-weight: bolder;
+    font-size: 4rem;    
+    color: white;
 }
 
 #sidebar > #logo {
     margin-top: 10rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #sidebar > #logo > img {
-    width: 30%;
+    width: 5.5rem;
 }
 
 #sidebar > #credit {
-    position: absolute;
     color: white;
     left: 0;
     bottom: 0;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 #sidebar > #credit > a {
@@ -52,7 +62,6 @@ main {
     justify-content: space-between; */
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    border: 1px solid black;
 }
 
 main > div {
@@ -119,25 +128,17 @@ input:focus {
     border-color: none;
 }
 
-input:valid {
+input[name="firstName"]:valid,
+input[name="lastName"]:valid, 
+input[name="userEmail"]:valid, 
+input[name="phoneNumber"]:valid {
     border-color: green;
 }
 
 .error {
     /* display: none; */
     visibility: hidden;
-
     display: none;
-}
-
-.approved {
-    visibility: hidden;
-    display: none;
-}
-
-.passError {
-    visibility: hidden;
-    color: red;
 }
 
 input:not(:focus):not(:placeholder-shown):invalid {
@@ -148,12 +149,6 @@ input:not(:focus):not(:placeholder-shown):invalid ~ .error {
     color: red;
     visibility: visible;
     display: inline;
-}
-
-input:not(:focus):not(:placeholder-shown):valid ~ .approved {
-    color: green;
-    display: inline;
-    visibility: visible;
 }
 
 main > div:nth-child(3) {
